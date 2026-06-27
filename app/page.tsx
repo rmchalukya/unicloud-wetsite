@@ -47,30 +47,15 @@ export default function Home() {
             <ServiceCard key={s.slug} service={s} />
           ))}
         </div>
-      </Section>
-
-      {/* Stats */}
-      <StatBar />
-
-      {/* Services (anchor) */}
-      <Section
-        id="services"
-        eyebrow="Our services"
-        title="The right talent, delivered fast"
-        intro="Flexible staffing models, expert recruitment and compliant payroll — designed to reduce hiring time and let you scale with confidence."
-        className="bg-surface-50"
-      >
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((s) => (
-            <ServiceCard key={s.slug} service={s} />
-          ))}
-        </div>
         <div className="mt-10 text-center">
           <Link href="/services" className="btn-outline">
             Explore all services
           </Link>
         </div>
       </Section>
+
+      {/* Stats */}
+      <StatBar />
 
       {/* Solutions (anchor) */}
       <Section
