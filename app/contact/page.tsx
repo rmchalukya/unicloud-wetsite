@@ -20,6 +20,24 @@ export default function ContactPage() {
         <div className="space-y-8">
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">
+              Email
+            </h3>
+            <ul className="mt-2 space-y-2">
+              {site.emails.map((e) => (
+                <li key={e.address}>
+                  <span className="text-xs text-gray-500">{e.label}</span>
+                  <a
+                    href={`mailto:${e.address}`}
+                    className="block text-brand-600 hover:underline"
+                  >
+                    {e.address}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">
               WhatsApp / Phone
             </h3>
             <a

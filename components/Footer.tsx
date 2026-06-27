@@ -13,21 +13,6 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed">
               {site.description}
             </p>
-            {site.social.length > 0 && (
-              <div className="mt-6 flex gap-4">
-                {site.social.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-brand-100/60 transition-colors hover:text-white"
-                  >
-                    {s.label}
-                  </a>
-                ))}
-              </div>
-            )}
           </div>
 
           {/* Nav */}
@@ -55,6 +40,16 @@ export function Footer() {
               Get in touch
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
+              {site.emails.map((e) => (
+                <li key={e.address}>
+                  <a
+                    href={`mailto:${e.address}`}
+                    className="transition-colors hover:text-white"
+                  >
+                    {e.address}
+                  </a>
+                </li>
+              ))}
               <li>
                 <a
                   href={`https://wa.me/${site.whatsapp}`}

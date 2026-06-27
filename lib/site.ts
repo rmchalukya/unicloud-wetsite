@@ -16,10 +16,13 @@ export const site = {
   about:
     "UniCloud Software Solutions Pvt. Ltd. helps organizations build, manage, and scale their workforce through comprehensive IT staffing, outsourcing, recruitment, and payroll management services. We partner with startups, enterprises, and global organizations to deliver skilled technology professionals, flexible staffing models, compliant payroll processing, and end-to-end workforce solutions. Our focus is on providing the right talent, reducing hiring time, ensuring statutory compliance, and enabling businesses to concentrate on innovation and growth while we manage their people operations.",
 
-  // Contact — email hidden for now. To re-enable, uncomment these and the
-  // email blocks in Footer.tsx, contact/privacy/terms pages, and ContactForm.tsx.
-  // email: "hello@unicloud.com",
-  // salesEmail: "sales@unicloud.com",
+  // Contact emails (label + address). Edit/extend here — footer & contact page
+  // map over this list.
+  emails: [
+    { label: "General", address: "billaunicloud@gmail.com" },
+    { label: "HR & Recruitment", address: "hr@unicloud.ind.in" },
+    { label: "Support (24/7)", address: "support.247@unicloud.ind.in" },
+  ],
   // WhatsApp / phone — stored without symbols for wa.me & tel: links
   whatsapp: "918884567672",
   whatsappDisplay: "+91 88845 67672",
@@ -40,13 +43,6 @@ export const site = {
   legal: [
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms & Conditions" },
-  ],
-
-  // Social links (replace # with real URLs; empty array hides the row)
-  social: [
-    { label: "LinkedIn", href: "#" },
-    { label: "Twitter", href: "#" },
-    { label: "GitHub", href: "#" },
   ],
 
   // Who the company serves (placeholder chips)
