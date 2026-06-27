@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Banner } from "@/components/Banner";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={sans.variable}>
       <body className="flex min-h-screen flex-col">
+        <Banner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

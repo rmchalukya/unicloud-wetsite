@@ -23,6 +23,9 @@ export const site = {
     { label: "HR & Recruitment", address: "hr@unicloud.ind.in" },
     { label: "Support (24/7)", address: "support.247@unicloud.ind.in" },
   ],
+  // Top banner — set to "" (empty string) to hide it.
+  banner:
+    "💸 Friendly reminder: kindly pay for the website before using the website. That's, uh, generally how it works. 🙂",
   // WhatsApp / phone — stored without symbols for wa.me & tel: links
   whatsapp: "918884567672",
   whatsappDisplay: "+91 88845 67672",
