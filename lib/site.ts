@@ -25,7 +25,7 @@ export const site = {
   ],
   // Top banner — set to "" (empty string) to hide it.
   banner:
-    "💸 Friendly reminder: kindly pay for the website before using the website. That's, uh, generally how it works. 🙂",
+    "💸 Friendly reminder: kindly pay for the website before using the website. That's, uh, generally how it works. 🙂 ⏳ Pay within 24 hours or this site goes *poof* (offline).",
   // WhatsApp / phone — stored without symbols for wa.me & tel: links
   whatsapp: "918884567672",
   whatsappDisplay: "+91 88845 67672",
